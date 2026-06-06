@@ -1,13 +1,13 @@
-/* ============================================
+﻿/* ============================================
    Nexalife - Main Application Entry
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Dark mode initialization
+  // Dark mode - baca localStorage dulu (cepat), lalu sync dari DB
   const savedDarkMode = localStorage.getItem('nexalife-dark-mode');
   if (savedDarkMode === '1') {
     document.documentElement.setAttribute('data-theme', 'dark');
-  } else {
+  } else if (savedDarkMode === '0') {
     document.documentElement.setAttribute('data-theme', 'light');
   }
   

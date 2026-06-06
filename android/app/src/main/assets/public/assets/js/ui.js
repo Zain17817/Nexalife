@@ -1,4 +1,4 @@
-/* ============================================
+﻿/* ============================================
    Nexalife - UI Module (Full Working Version)
    ============================================ */
 
@@ -405,7 +405,7 @@ class UIManager {
       </form>
     `);
     
-    window.toggleCategoryEdit = () => {
+    window.ui.toggleCategoryEdit = () => {
       const type = document.getElementById('transType').value;
       const sel = document.getElementById('transCategory');
       const incomeCats = ['Uang Saku', 'Transfer Orang Tua', 'Lainnya'];
@@ -413,7 +413,7 @@ class UIManager {
       const cats = type === 'income' ? incomeCats : expenseCats;
       sel.innerHTML = cats.map(c => `<option value="${c}" ${c === t.category ? 'selected' : ''}>${c}</option>`).join('');
     };
-    window.toggleCategoryEdit();
+    window.ui.toggleCategoryEdit();
   }
 
   async deleteTransaction(id) {
@@ -854,34 +854,15 @@ class UIManager {
             </div>
           </div>
           
-          <div class="card">
-            <div class="section-title">Data</div>
-            <div class="settings-item">
-              <div>
-                <div class="settings-label">Ekspor Data</div>
-                <div class="settings-desc">Simpan semua data ke file JSON</div>
-              </div>
-              <button class="btn btn-outline btn-sm" onclick="window.ui.exportData()">Ekspor</button>
-            </div>
-            <div class="settings-item">
-              <div>
-                <div class="settings-label">Impor Data</div>
-                <div class="settings-desc">Pulihkan data dari file JSON</div>
-              </div>
-              <label class="btn btn-outline btn-sm" style="cursor:pointer;">
-                Impor
-                <input type="file" id="importFile" accept=".json" style="display:none;" onchange="window.ui.importData(event)">
-              </label>
-            </div>
-          </div>
+
           
           <div class="card">
             <div class="section-title">Tentang</div>
             <div class="settings-item">
               <div>
                 <div class="settings-label" style="margin-bottom:4px;">Nexalife</div>
-                <div class="settings-desc">Versi 1.0 — Aplikasi manajemen keuangan dan to do list</div>
-                <div class="settings-desc">Created by Zeynn</div>
+                <div class="settings-desc">Versi 1.0 - Aplikasi manajemen keuangan dan to do list - 06/06/2026</div>
+                <div class="settings-desc">Created by Ahmad Zainul Ishlah</div>
               </div>
             </div>
           </div>

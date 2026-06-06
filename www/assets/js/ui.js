@@ -861,7 +861,7 @@ class UIManager {
             <div class="settings-item">
               <div>
                 <div class="settings-label" style="margin-bottom:4px;">Nexalife</div>
-                <div class="settings-desc">Versi 1.0 - Aplikasi manajemen keuangan dan to do list</div>
+                <div class="settings-desc">Versi 1.0 - Aplikasi manajemen keuangan dan to do list - 06/06/2026</div>
                 <div class="settings-desc">Created by Ahmad Zainul Ishlah</div>
               </div>
             </div>
