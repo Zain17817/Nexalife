@@ -1,0 +1,44 @@
+/* Transaction page specific styles */
+.transaction-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.transaction-stat-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 16px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.transaction-stat-label {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+
+.transaction-stat-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.transaction-stat-value.income {
+  color: var(--success);
+}
+
+.transaction-stat-value.expense {
+  color: var(--danger);
+}
+
+.filter-section {
+  margin-bottom: 16px;
+}
+
+.month-filter {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
