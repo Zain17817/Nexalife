@@ -1,0 +1,36 @@
+{
+  "name": "nexalife",
+  "version": "1.0.0",
+  "description": "Aplikasi manajemen keuangan dan to do list",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run serve",
+    "serve": "serve .",
+    "build": "echo 'Build complete'",
+    "sync": "npx cap sync",
+    "android": "npx cap open android",
+    "ios": "npx cap open ios",
+    "add:android": "npx cap add android",
+    "add:ios": "npx cap add ios"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.6.6",
+    "serve": "^14.0.0"
+  },
+  "author": "Zeynn",
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor-community/sqlite": "^7.0.3",
+    "@capacitor/android": "^7.6.6",
+    "@capacitor/app": "^7.1.2",
+    "@capacitor/core": "^7.6.6",
+    "@capacitor/device": "^7.0.5",
+    "@capacitor/filesystem": "^7.1.8",
+    "@capacitor/ios": "^7.6.6",
+    "@capacitor/splash-screen": "^7.0.5",
+    "@capacitor/status-bar": "^7.0.6",
+    "chart.js": "^4.5.1",
+    "jeep-sqlite": "^2.8.0",
+    "localforage": "^1.10.0"
+  }
+}

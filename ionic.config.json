@@ -1,0 +1,7 @@
+{
+  "name": "Nexalife",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}
