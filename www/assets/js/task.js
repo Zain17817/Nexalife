@@ -31,7 +31,7 @@ class TaskManager {
   }
 
   async updateTask(id, taskData) {
-    const existing = await this.db.get('tasks', id);
+    const existing = await this.db.getById('tasks', id);
     if (!existing) throw new Error('Task not found');
     
     const updated = { ...existing, ...taskData };
@@ -43,7 +43,7 @@ class TaskManager {
   }
 
   async toggleTaskStatus(id) {
-    const task = await this.db.get('tasks', id);
+    const task = await this.db.getById('tasks', id);
     if (!task) throw new Error('Task not found');
     
     task.status = task.status === 'selesai' ? 'pending' : 'selesai';

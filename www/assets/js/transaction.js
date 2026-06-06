@@ -40,7 +40,7 @@ class TransactionManager {
   }
 
   async updateTransaction(id, transactionData) {
-    const existing = await this.db.get('transactions', id);
+    const existing = await this.db.getById('transactions', id);
     if (!existing) throw new Error('Transaction not found');
     
     const updated = { ...existing, ...transactionData };
@@ -163,7 +163,9 @@ class TransactionManager {
     for (const store of stores) {
       const items = await this.db.getAll(store);
       for (const item of items) {
-        await this.db.delete(store, item.id || item.key);
+        const keyCol = store === 'settings' ? 'key' : 'id';
+        const keyVal = store === 'settings' ? item.key : item.id;
+        await this.db.delete(store, keyVal, keyCol);
       }
     }
     
