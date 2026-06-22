@@ -6,6 +6,7 @@
   "scripts": {
     "start": "npm run serve",
     "serve": "serve .",
+    "test": "vitest run",
     "build": "echo 'Build complete'",
     "sync": "npx cap sync",
     "android": "npx cap open android",
@@ -16,7 +17,8 @@
   "devDependencies": {
     "@capacitor/assets": "^3.0.5",
     "@capacitor/cli": "^7.6.6",
-    "serve": "^14.0.0"
+    "serve": "^14.0.0",
+    "vitest": "^4.1.9"
   },
   "author": "Zeynn",
   "license": "MIT",

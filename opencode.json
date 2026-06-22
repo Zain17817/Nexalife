@@ -1,0 +1,18 @@
+{
+  "instructions": [
+    "Baca AGENTS.md sebelum memulai pekerjaan apapun di repositori ini.",
+    "Ikuti workflow: Update lokal → Test → Push → CI/CD → Analisa jika gagal.",
+    "Jalankan 'npm test' untuk test web app (Vitest).",
+    "Jalankan 'python AGENT.py --test' untuk test agent (Python unittest).",
+    "JANGAN push jika test lokal gagal.",
+    "Gunakan commit convention: tipe(scope): deskripsi"
+  ],
+  "model_hints": {
+    "preferred_language": "id",
+    "code_style_js": "camelCase",
+    "code_style_css": "kebab-case",
+    "code_style_python": "snake_case",
+    "test_framework_web": "vitest",
+    "test_framework_agent": "python unittest"
+  }
+}
