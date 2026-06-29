@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Nexalife - Aplikasi manajemen Keuangan dan to do list (mobile-first SPA)
 
 Aplikasi manajemen keuangan dan tugas berbasis web yang dirancang khusus untuk mahasiswa KKN (Kuliah Kerja Nyata). Dibangun sebagai **mobile-first Single Page Application (SPA)** dengan dukungan **PWA** dan **hybrid mobile** (Capacitor).
@@ -117,3 +118,8 @@ Setiap push ke branch `main` akan otomatis menjalankan seluruh test melalui GitH
 ## Lisensi
 
 MIT
+=======
+Nama   :Ahmad Zainul Ishlah
+NIM    : 101230074
+Kelas  : TF23A
+>>>>>>> 2e9859c62b9a7fbe5f277616d6516b383eb25673
